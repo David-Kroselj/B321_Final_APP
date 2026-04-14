@@ -1,8 +1,8 @@
 namespace B321_Final_APP
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -18,6 +18,11 @@ namespace B321_Final_APP
         }
 
         private void btnNext_PG1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlBreakout_Models_Paint(object sender, PaintEventArgs e)
         {
 
         }
