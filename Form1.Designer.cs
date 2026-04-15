@@ -66,11 +66,11 @@
             lblFatboy_Models = new Label();
             lblBreakout_Models = new Label();
             lblModelSelect = new Label();
-            pnlOptions = new Panel();
+            pnlSummary = new Panel();
             btnBack_Summary = new Button();
             btnNext_Summary = new Button();
             lblSummary_Summary = new Label();
-            pnlSummary = new Panel();
+            pnlOptions = new Panel();
             lblDreamBike_Options = new Label();
             btnBack_Options = new Button();
             btnNext_Options = new Button();
@@ -80,10 +80,6 @@
             lblSelectionHeader_Options = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             rtbSummary_Summary = new RichTextBox();
-            panel1 = new Panel();
-            btnBack_MyOrders = new Button();
-            btnExit_MyOrders = new Button();
-            lblMyOrders_MyOrders = new Label();
             pnlLogin.SuspendLayout();
             pnlModelsSelection.SuspendLayout();
             pnlFatboyInner_Models.SuspendLayout();
@@ -95,10 +91,9 @@
             pnlGrayGhostOuter_Models.SuspendLayout();
             pnlGrayGhost_Models.SuspendLayout();
             pnlGreyGhostInner_Models.SuspendLayout();
-            pnlOptions.SuspendLayout();
             pnlSummary.SuspendLayout();
+            pnlOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pnlLogin
@@ -525,18 +520,18 @@
             lblModelSelect.TabIndex = 0;
             lblModelSelect.Text = "Select Your Model";
             // 
-            // pnlOptions
+            // pnlSummary
             // 
-            pnlOptions.BackColor = Color.Black;
-            pnlOptions.Controls.Add(rtbSummary_Summary);
-            pnlOptions.Controls.Add(btnBack_Summary);
-            pnlOptions.Controls.Add(btnNext_Summary);
-            pnlOptions.Controls.Add(lblSummary_Summary);
-            pnlOptions.Dock = DockStyle.Fill;
-            pnlOptions.Location = new Point(0, 0);
-            pnlOptions.Name = "pnlOptions";
-            pnlOptions.Size = new Size(1282, 713);
-            pnlOptions.TabIndex = 2;
+            pnlSummary.BackColor = Color.Black;
+            pnlSummary.Controls.Add(rtbSummary_Summary);
+            pnlSummary.Controls.Add(btnBack_Summary);
+            pnlSummary.Controls.Add(btnNext_Summary);
+            pnlSummary.Controls.Add(lblSummary_Summary);
+            pnlSummary.Dock = DockStyle.Fill;
+            pnlSummary.Location = new Point(0, 0);
+            pnlSummary.Name = "pnlSummary";
+            pnlSummary.Size = new Size(1282, 713);
+            pnlSummary.TabIndex = 2;
             // 
             // btnBack_Summary
             // 
@@ -559,7 +554,7 @@
             btnNext_Summary.Name = "btnNext_Summary";
             btnNext_Summary.Size = new Size(200, 50);
             btnNext_Summary.TabIndex = 7;
-            btnNext_Summary.Text = "Next: My Orders";
+            btnNext_Summary.Text = "Next: All Orders";
             btnNext_Summary.UseVisualStyleBackColor = false;
             // 
             // lblSummary_Summary
@@ -573,21 +568,21 @@
             lblSummary_Summary.TabIndex = 0;
             lblSummary_Summary.Text = "Order Summary";
             // 
-            // pnlSummary
+            // pnlOptions
             // 
-            pnlSummary.BackColor = Color.Black;
-            pnlSummary.Controls.Add(lblDreamBike_Options);
-            pnlSummary.Controls.Add(btnBack_Options);
-            pnlSummary.Controls.Add(btnNext_Options);
-            pnlSummary.Controls.Add(lblMainHeader_Options);
-            pnlSummary.Controls.Add(flpMenu_Options);
-            pnlSummary.Controls.Add(pictureBox1);
-            pnlSummary.Controls.Add(lblSelectionHeader_Options);
-            pnlSummary.Dock = DockStyle.Fill;
-            pnlSummary.Location = new Point(0, 0);
-            pnlSummary.Name = "pnlSummary";
-            pnlSummary.Size = new Size(1282, 713);
-            pnlSummary.TabIndex = 3;
+            pnlOptions.BackColor = Color.Black;
+            pnlOptions.Controls.Add(lblDreamBike_Options);
+            pnlOptions.Controls.Add(btnBack_Options);
+            pnlOptions.Controls.Add(btnNext_Options);
+            pnlOptions.Controls.Add(lblMainHeader_Options);
+            pnlOptions.Controls.Add(flpMenu_Options);
+            pnlOptions.Controls.Add(pictureBox1);
+            pnlOptions.Controls.Add(lblSelectionHeader_Options);
+            pnlOptions.Dock = DockStyle.Fill;
+            pnlOptions.Location = new Point(0, 0);
+            pnlOptions.Name = "pnlOptions";
+            pnlOptions.Size = new Size(1282, 713);
+            pnlOptions.TabIndex = 3;
             // 
             // lblDreamBike_Options
             // 
@@ -676,63 +671,15 @@
             rtbSummary_Summary.TabIndex = 9;
             rtbSummary_Summary.Text = "";
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Black;
-            panel1.Controls.Add(btnBack_MyOrders);
-            panel1.Controls.Add(btnExit_MyOrders);
-            panel1.Controls.Add(lblMyOrders_MyOrders);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1282, 713);
-            panel1.TabIndex = 4;
-            // 
-            // btnBack_MyOrders
-            // 
-            btnBack_MyOrders.BackColor = Color.FromArgb(255, 128, 0);
-            btnBack_MyOrders.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBack_MyOrders.ForeColor = Color.Black;
-            btnBack_MyOrders.Location = new Point(75, 620);
-            btnBack_MyOrders.Name = "btnBack_MyOrders";
-            btnBack_MyOrders.Size = new Size(200, 50);
-            btnBack_MyOrders.TabIndex = 8;
-            btnBack_MyOrders.Text = "Back: Summary";
-            btnBack_MyOrders.UseVisualStyleBackColor = false;
-            // 
-            // btnExit_MyOrders
-            // 
-            btnExit_MyOrders.BackColor = Color.FromArgb(255, 128, 0);
-            btnExit_MyOrders.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit_MyOrders.ForeColor = Color.Black;
-            btnExit_MyOrders.Location = new Point(991, 620);
-            btnExit_MyOrders.Name = "btnExit_MyOrders";
-            btnExit_MyOrders.Size = new Size(200, 50);
-            btnExit_MyOrders.TabIndex = 7;
-            btnExit_MyOrders.Text = "Exit";
-            btnExit_MyOrders.UseVisualStyleBackColor = false;
-            // 
-            // lblMyOrders_MyOrders
-            // 
-            lblMyOrders_MyOrders.AutoSize = true;
-            lblMyOrders_MyOrders.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMyOrders_MyOrders.ForeColor = Color.FromArgb(255, 128, 0);
-            lblMyOrders_MyOrders.Location = new Point(421, 25);
-            lblMyOrders_MyOrders.Name = "lblMyOrders_MyOrders";
-            lblMyOrders_MyOrders.Size = new Size(440, 106);
-            lblMyOrders_MyOrders.TabIndex = 0;
-            lblMyOrders_MyOrders.Text = "My Orders";
-            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 713);
-            Controls.Add(panel1);
-            Controls.Add(pnlOptions);
+            Controls.Add(pnlSummary);
             Controls.Add(pnlLogin);
             Controls.Add(pnlModelsSelection);
-            Controls.Add(pnlSummary);
+            Controls.Add(pnlOptions);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Z & D Harley Davidson";
@@ -752,12 +699,10 @@
             pnlGrayGhost_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.PerformLayout();
-            pnlOptions.ResumeLayout(false);
-            pnlOptions.PerformLayout();
             pnlSummary.ResumeLayout(false);
+            pnlSummary.PerformLayout();
+            pnlOptions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -765,8 +710,8 @@
 
         private Panel pnlLogin;
         private Panel pnlModelsSelection;
-        private Panel pnlOptions;
         private Panel pnlSummary;
+        private Panel pnlOptions;
         private Label lblHarleyDavidson_Login;
         private TextBox txtUsername_Login;
         private Label lblUsername_Login;
@@ -816,9 +761,5 @@
         private Button btnBack_Summary;
         private Button btnNext_Summary;
         private RichTextBox rtbSummary_Summary;
-        private Panel panel1;
-        private Button btnBack_MyOrders;
-        private Button btnExit_MyOrders;
-        private Label lblMyOrders_MyOrders;
     }
 }
