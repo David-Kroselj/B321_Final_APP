@@ -67,8 +67,8 @@
             lblBreakout_Models = new Label();
             lblModelSelect = new Label();
             pnlOptions = new Panel();
-            label2 = new Label();
-            label1 = new Label();
+            btnBack_Summary = new Button();
+            btnNext_Summary = new Button();
             lblSummary_Summary = new Label();
             pnlSummary = new Panel();
             lblDreamBike_Options = new Label();
@@ -79,9 +79,11 @@
             pictureBox1 = new PictureBox();
             lblSelectionHeader_Options = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            label3 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            rtbSummary_Summary = new RichTextBox();
+            panel1 = new Panel();
+            btnBack_MyOrders = new Button();
+            btnExit_MyOrders = new Button();
+            lblMyOrders_MyOrders = new Label();
             pnlLogin.SuspendLayout();
             pnlModelsSelection.SuspendLayout();
             pnlFatboyInner_Models.SuspendLayout();
@@ -96,6 +98,7 @@
             pnlOptions.SuspendLayout();
             pnlSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pnlLogin
@@ -525,11 +528,9 @@
             // pnlOptions
             // 
             pnlOptions.BackColor = Color.Black;
-            pnlOptions.Controls.Add(button1);
-            pnlOptions.Controls.Add(button2);
-            pnlOptions.Controls.Add(label3);
-            pnlOptions.Controls.Add(label2);
-            pnlOptions.Controls.Add(label1);
+            pnlOptions.Controls.Add(rtbSummary_Summary);
+            pnlOptions.Controls.Add(btnBack_Summary);
+            pnlOptions.Controls.Add(btnNext_Summary);
             pnlOptions.Controls.Add(lblSummary_Summary);
             pnlOptions.Dock = DockStyle.Fill;
             pnlOptions.Location = new Point(0, 0);
@@ -537,38 +538,40 @@
             pnlOptions.Size = new Size(1282, 713);
             pnlOptions.TabIndex = 2;
             // 
-            // label2
+            // btnBack_Summary
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(950, 150);
-            label2.Name = "label2";
-            label2.Size = new Size(282, 54);
-            label2.TabIndex = 2;
-            label2.Text = "All My Orders";
+            btnBack_Summary.BackColor = Color.FromArgb(255, 128, 0);
+            btnBack_Summary.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack_Summary.ForeColor = Color.Black;
+            btnBack_Summary.Location = new Point(75, 620);
+            btnBack_Summary.Name = "btnBack_Summary";
+            btnBack_Summary.Size = new Size(200, 50);
+            btnBack_Summary.TabIndex = 8;
+            btnBack_Summary.Text = "Back: Options";
+            btnBack_Summary.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // btnNext_Summary
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(50, 150);
-            label1.Name = "label1";
-            label1.Size = new Size(286, 54);
-            label1.TabIndex = 1;
-            label1.Text = "Current Order";
+            btnNext_Summary.BackColor = Color.FromArgb(255, 128, 0);
+            btnNext_Summary.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext_Summary.ForeColor = Color.Black;
+            btnNext_Summary.Location = new Point(991, 620);
+            btnNext_Summary.Name = "btnNext_Summary";
+            btnNext_Summary.Size = new Size(200, 50);
+            btnNext_Summary.TabIndex = 7;
+            btnNext_Summary.Text = "Next: My Orders";
+            btnNext_Summary.UseVisualStyleBackColor = false;
             // 
             // lblSummary_Summary
             // 
             lblSummary_Summary.AutoSize = true;
             lblSummary_Summary.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSummary_Summary.ForeColor = Color.FromArgb(255, 128, 0);
-            lblSummary_Summary.Location = new Point(439, 25);
+            lblSummary_Summary.Location = new Point(319, 25);
             lblSummary_Summary.Name = "lblSummary_Summary";
-            lblSummary_Summary.Size = new Size(405, 106);
+            lblSummary_Summary.Size = new Size(645, 106);
             lblSummary_Summary.TabIndex = 0;
-            lblSummary_Summary.Text = "Summary";
+            lblSummary_Summary.Text = "Order Summary";
             // 
             // pnlSummary
             // 
@@ -663,46 +666,69 @@
             lblSelectionHeader_Options.Text = "Model Selected:";
             lblSelectionHeader_Options.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // rtbSummary_Summary
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(438, 150);
-            label3.Name = "label3";
-            label3.Size = new Size(407, 54);
-            label3.TabIndex = 3;
-            label3.Text = "Place Another Order";
+            rtbSummary_Summary.BackColor = Color.FromArgb(64, 64, 64);
+            rtbSummary_Summary.Location = new Point(391, 194);
+            rtbSummary_Summary.Name = "rtbSummary_Summary";
+            rtbSummary_Summary.ReadOnly = true;
+            rtbSummary_Summary.Size = new Size(500, 400);
+            rtbSummary_Summary.TabIndex = 9;
+            rtbSummary_Summary.Text = "";
             // 
-            // button1
+            // panel1
             // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
-            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(98, 620);
-            button1.Name = "button1";
-            button1.Size = new Size(200, 50);
-            button1.TabIndex = 8;
-            button1.Text = "Back: Options";
-            button1.UseVisualStyleBackColor = false;
+            panel1.BackColor = Color.Black;
+            panel1.Controls.Add(btnBack_MyOrders);
+            panel1.Controls.Add(btnExit_MyOrders);
+            panel1.Controls.Add(lblMyOrders_MyOrders);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1282, 713);
+            panel1.TabIndex = 4;
             // 
-            // button2
+            // btnBack_MyOrders
             // 
-            button2.BackColor = Color.FromArgb(255, 128, 0);
-            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(991, 620);
-            button2.Name = "button2";
-            button2.Size = new Size(200, 50);
-            button2.TabIndex = 7;
-            button2.Text = "Finish";
-            button2.UseVisualStyleBackColor = false;
+            btnBack_MyOrders.BackColor = Color.FromArgb(255, 128, 0);
+            btnBack_MyOrders.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack_MyOrders.ForeColor = Color.Black;
+            btnBack_MyOrders.Location = new Point(75, 620);
+            btnBack_MyOrders.Name = "btnBack_MyOrders";
+            btnBack_MyOrders.Size = new Size(200, 50);
+            btnBack_MyOrders.TabIndex = 8;
+            btnBack_MyOrders.Text = "Back: Summary";
+            btnBack_MyOrders.UseVisualStyleBackColor = false;
+            // 
+            // btnExit_MyOrders
+            // 
+            btnExit_MyOrders.BackColor = Color.FromArgb(255, 128, 0);
+            btnExit_MyOrders.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit_MyOrders.ForeColor = Color.Black;
+            btnExit_MyOrders.Location = new Point(991, 620);
+            btnExit_MyOrders.Name = "btnExit_MyOrders";
+            btnExit_MyOrders.Size = new Size(200, 50);
+            btnExit_MyOrders.TabIndex = 7;
+            btnExit_MyOrders.Text = "Exit";
+            btnExit_MyOrders.UseVisualStyleBackColor = false;
+            // 
+            // lblMyOrders_MyOrders
+            // 
+            lblMyOrders_MyOrders.AutoSize = true;
+            lblMyOrders_MyOrders.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMyOrders_MyOrders.ForeColor = Color.FromArgb(255, 128, 0);
+            lblMyOrders_MyOrders.Location = new Point(421, 25);
+            lblMyOrders_MyOrders.Name = "lblMyOrders_MyOrders";
+            lblMyOrders_MyOrders.Size = new Size(440, 106);
+            lblMyOrders_MyOrders.TabIndex = 0;
+            lblMyOrders_MyOrders.Text = "My Orders";
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 713);
+            Controls.Add(panel1);
             Controls.Add(pnlOptions);
             Controls.Add(pnlLogin);
             Controls.Add(pnlModelsSelection);
@@ -730,6 +756,8 @@
             pnlOptions.PerformLayout();
             pnlSummary.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -785,10 +813,12 @@
         private Button btnNext_Options;
         private Label lblDreamBike_Options;
         private Label lblSummary_Summary;
-        private Label label2;
-        private Label label1;
-        private Button button1;
-        private Button button2;
-        private Label label3;
+        private Button btnBack_Summary;
+        private Button btnNext_Summary;
+        private RichTextBox rtbSummary_Summary;
+        private Panel panel1;
+        private Button btnBack_MyOrders;
+        private Button btnExit_MyOrders;
+        private Label lblMyOrders_MyOrders;
     }
 }
