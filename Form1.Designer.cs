@@ -39,18 +39,21 @@
             pnlFatboyInner_Models = new Panel();
             panel8 = new Panel();
             pnlFatboyOuter_Models = new Panel();
+            radChooseFatboy_Model = new RadioButton();
             placeholder = new FlowLayoutPanel();
             button6 = new Button();
             flowLayoutPanel5 = new FlowLayoutPanel();
             pnlBreakoutOuter_Models = new Panel();
             panel5 = new Panel();
             pnlBreakoutInner_Models = new Panel();
+            radChooseBreakout_Model = new RadioButton();
             placeholder3 = new FlowLayoutPanel();
             button4 = new Button();
             flowLayoutPanel4 = new FlowLayoutPanel();
             pnlGrayGhostOuter_Models = new Panel();
             pnlGrayGhost_Models = new Panel();
             pnlGreyGhostInner_Models = new Panel();
+            radChooseGrayGhost_Model = new RadioButton();
             placeholder2 = new FlowLayoutPanel();
             btnSelectGrayGhost_Models = new Button();
             placeholder1 = new FlowLayoutPanel();
@@ -63,9 +66,9 @@
             pnlOptions = new Panel();
             pnlSummary = new Panel();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            radChooseGrayGhost_Model = new RadioButton();
-            radChooseFatboy_Model = new RadioButton();
-            radChooseBreakout_Model = new RadioButton();
+            lblBreakoutDesc_Models = new Label();
+            lblGrayGhostDesc_Models = new Label();
+            lblFatboyDesc_Models = new Label();
             pnlLogin.SuspendLayout();
             pnlModelsSelection.SuspendLayout();
             pnlFatboyInner_Models.SuspendLayout();
@@ -201,12 +204,28 @@
             // pnlFatboyOuter_Models
             // 
             pnlFatboyOuter_Models.BackColor = Color.FromArgb(50, 50, 50);
+            pnlFatboyOuter_Models.Controls.Add(lblFatboyDesc_Models);
             pnlFatboyOuter_Models.Controls.Add(radChooseFatboy_Model);
             pnlFatboyOuter_Models.Controls.Add(placeholder);
             pnlFatboyOuter_Models.Location = new Point(-1, -1);
             pnlFatboyOuter_Models.Name = "pnlFatboyOuter_Models";
             pnlFatboyOuter_Models.Size = new Size(300, 320);
             pnlFatboyOuter_Models.TabIndex = 6;
+            // 
+            // radChooseFatboy_Model
+            // 
+            radChooseFatboy_Model.Appearance = Appearance.Button;
+            radChooseFatboy_Model.AutoSize = true;
+            radChooseFatboy_Model.BackColor = Color.FromArgb(255, 128, 0);
+            radChooseFatboy_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radChooseFatboy_Model.Location = new Point(59, 254);
+            radChooseFatboy_Model.Name = "radChooseFatboy_Model";
+            radChooseFatboy_Model.Padding = new Padding(3);
+            radChooseFatboy_Model.Size = new Size(183, 47);
+            radChooseFatboy_Model.TabIndex = 2;
+            radChooseFatboy_Model.TabStop = true;
+            radChooseFatboy_Model.Text = "Choose Model";
+            radChooseFatboy_Model.UseVisualStyleBackColor = false;
             // 
             // placeholder
             // 
@@ -260,12 +279,28 @@
             // pnlBreakoutInner_Models
             // 
             pnlBreakoutInner_Models.BackColor = Color.FromArgb(50, 50, 50);
+            pnlBreakoutInner_Models.Controls.Add(lblBreakoutDesc_Models);
             pnlBreakoutInner_Models.Controls.Add(radChooseBreakout_Model);
             pnlBreakoutInner_Models.Controls.Add(placeholder3);
             pnlBreakoutInner_Models.Location = new Point(-1, -1);
             pnlBreakoutInner_Models.Name = "pnlBreakoutInner_Models";
             pnlBreakoutInner_Models.Size = new Size(300, 320);
             pnlBreakoutInner_Models.TabIndex = 6;
+            // 
+            // radChooseBreakout_Model
+            // 
+            radChooseBreakout_Model.Appearance = Appearance.Button;
+            radChooseBreakout_Model.AutoSize = true;
+            radChooseBreakout_Model.BackColor = Color.FromArgb(255, 128, 0);
+            radChooseBreakout_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radChooseBreakout_Model.Location = new Point(59, 254);
+            radChooseBreakout_Model.Name = "radChooseBreakout_Model";
+            radChooseBreakout_Model.Padding = new Padding(3);
+            radChooseBreakout_Model.Size = new Size(183, 47);
+            radChooseBreakout_Model.TabIndex = 2;
+            radChooseBreakout_Model.TabStop = true;
+            radChooseBreakout_Model.Text = "Choose Model";
+            radChooseBreakout_Model.UseVisualStyleBackColor = false;
             // 
             // placeholder3
             // 
@@ -319,12 +354,28 @@
             // pnlGreyGhostInner_Models
             // 
             pnlGreyGhostInner_Models.BackColor = Color.FromArgb(50, 50, 50);
+            pnlGreyGhostInner_Models.Controls.Add(lblGrayGhostDesc_Models);
             pnlGreyGhostInner_Models.Controls.Add(radChooseGrayGhost_Model);
             pnlGreyGhostInner_Models.Controls.Add(placeholder2);
             pnlGreyGhostInner_Models.Location = new Point(-1, -1);
             pnlGreyGhostInner_Models.Name = "pnlGreyGhostInner_Models";
             pnlGreyGhostInner_Models.Size = new Size(300, 320);
             pnlGreyGhostInner_Models.TabIndex = 6;
+            // 
+            // radChooseGrayGhost_Model
+            // 
+            radChooseGrayGhost_Model.Appearance = Appearance.Button;
+            radChooseGrayGhost_Model.AutoSize = true;
+            radChooseGrayGhost_Model.BackColor = Color.FromArgb(255, 128, 0);
+            radChooseGrayGhost_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radChooseGrayGhost_Model.Location = new Point(59, 254);
+            radChooseGrayGhost_Model.Name = "radChooseGrayGhost_Model";
+            radChooseGrayGhost_Model.Padding = new Padding(3);
+            radChooseGrayGhost_Model.Size = new Size(183, 47);
+            radChooseGrayGhost_Model.TabIndex = 1;
+            radChooseGrayGhost_Model.TabStop = true;
+            radChooseGrayGhost_Model.Text = "Choose Model";
+            radChooseGrayGhost_Model.UseVisualStyleBackColor = false;
             // 
             // placeholder2
             // 
@@ -439,50 +490,38 @@
             pnlSummary.Size = new Size(1282, 713);
             pnlSummary.TabIndex = 3;
             // 
-            // radChooseGrayGhost_Model
+            // lblBreakoutDesc_Models
             // 
-            radChooseGrayGhost_Model.Appearance = Appearance.Button;
-            radChooseGrayGhost_Model.AutoSize = true;
-            radChooseGrayGhost_Model.BackColor = Color.FromArgb(255, 128, 0);
-            radChooseGrayGhost_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radChooseGrayGhost_Model.Location = new Point(59, 254);
-            radChooseGrayGhost_Model.Name = "radChooseGrayGhost_Model";
-            radChooseGrayGhost_Model.Padding = new Padding(3);
-            radChooseGrayGhost_Model.Size = new Size(183, 47);
-            radChooseGrayGhost_Model.TabIndex = 1;
-            radChooseGrayGhost_Model.TabStop = true;
-            radChooseGrayGhost_Model.Text = "Choose Model";
-            radChooseGrayGhost_Model.UseVisualStyleBackColor = false;
+            lblBreakoutDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblBreakoutDesc_Models.ForeColor = Color.White;
+            lblBreakoutDesc_Models.Location = new Point(25, 160);
+            lblBreakoutDesc_Models.Name = "lblBreakoutDesc_Models";
+            lblBreakoutDesc_Models.Size = new Size(250, 81);
+            lblBreakoutDesc_Models.TabIndex = 3;
+            lblBreakoutDesc_Models.Text = "A low slung cruiser with an aggressive style";
+            lblBreakoutDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // radChooseFatboy_Model
+            // lblGrayGhostDesc_Models
             // 
-            radChooseFatboy_Model.Appearance = Appearance.Button;
-            radChooseFatboy_Model.AutoSize = true;
-            radChooseFatboy_Model.BackColor = Color.FromArgb(255, 128, 0);
-            radChooseFatboy_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radChooseFatboy_Model.Location = new Point(59, 254);
-            radChooseFatboy_Model.Name = "radChooseFatboy_Model";
-            radChooseFatboy_Model.Padding = new Padding(3);
-            radChooseFatboy_Model.Size = new Size(183, 47);
-            radChooseFatboy_Model.TabIndex = 2;
-            radChooseFatboy_Model.TabStop = true;
-            radChooseFatboy_Model.Text = "Choose Model";
-            radChooseFatboy_Model.UseVisualStyleBackColor = false;
+            lblGrayGhostDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblGrayGhostDesc_Models.ForeColor = Color.White;
+            lblGrayGhostDesc_Models.Location = new Point(25, 160);
+            lblGrayGhostDesc_Models.Name = "lblGrayGhostDesc_Models";
+            lblGrayGhostDesc_Models.Size = new Size(250, 81);
+            lblGrayGhostDesc_Models.TabIndex = 4;
+            lblGrayGhostDesc_Models.Text = "An exclusive variant of the classic Fatboy model";
+            lblGrayGhostDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // radChooseBreakout_Model
+            // lblFatboyDesc_Models
             // 
-            radChooseBreakout_Model.Appearance = Appearance.Button;
-            radChooseBreakout_Model.AutoSize = true;
-            radChooseBreakout_Model.BackColor = Color.FromArgb(255, 128, 0);
-            radChooseBreakout_Model.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radChooseBreakout_Model.Location = new Point(59, 254);
-            radChooseBreakout_Model.Name = "radChooseBreakout_Model";
-            radChooseBreakout_Model.Padding = new Padding(3);
-            radChooseBreakout_Model.Size = new Size(183, 47);
-            radChooseBreakout_Model.TabIndex = 2;
-            radChooseBreakout_Model.TabStop = true;
-            radChooseBreakout_Model.Text = "Choose Model";
-            radChooseBreakout_Model.UseVisualStyleBackColor = false;
+            lblFatboyDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblFatboyDesc_Models.ForeColor = Color.White;
+            lblFatboyDesc_Models.Location = new Point(25, 160);
+            lblFatboyDesc_Models.Name = "lblFatboyDesc_Models";
+            lblFatboyDesc_Models.Size = new Size(250, 81);
+            lblFatboyDesc_Models.TabIndex = 5;
+            lblFatboyDesc_Models.Text = "A Softail cruiser known for its classic looks";
+            lblFatboyDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 
@@ -556,5 +595,8 @@
         private RadioButton radChooseGrayGhost_Model;
         private RadioButton radChooseFatboy_Model;
         private RadioButton radChooseBreakout_Model;
+        private Label lblBreakoutDesc_Models;
+        private Label lblFatboyDesc_Models;
+        private Label lblGrayGhostDesc_Models;
     }
 }
