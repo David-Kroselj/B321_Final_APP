@@ -39,6 +39,7 @@
             pnlFatboyInner_Models = new Panel();
             panel8 = new Panel();
             pnlFatboyOuter_Models = new Panel();
+            lblFatboyDesc_Models = new Label();
             radChooseFatboy_Model = new RadioButton();
             placeholder = new FlowLayoutPanel();
             button6 = new Button();
@@ -46,6 +47,7 @@
             pnlBreakoutOuter_Models = new Panel();
             panel5 = new Panel();
             pnlBreakoutInner_Models = new Panel();
+            lblBreakoutDesc_Models = new Label();
             radChooseBreakout_Model = new RadioButton();
             placeholder3 = new FlowLayoutPanel();
             button4 = new Button();
@@ -53,6 +55,7 @@
             pnlGrayGhostOuter_Models = new Panel();
             pnlGrayGhost_Models = new Panel();
             pnlGreyGhostInner_Models = new Panel();
+            lblGrayGhostDesc_Models = new Label();
             radChooseGrayGhost_Model = new RadioButton();
             placeholder2 = new FlowLayoutPanel();
             btnSelectGrayGhost_Models = new Button();
@@ -65,10 +68,13 @@
             lblModelSelect = new Label();
             pnlOptions = new Panel();
             pnlSummary = new Panel();
+            lblMainHeader_Options = new Label();
+            flpMenu_Options = new FlowLayoutPanel();
+            pictureBox1 = new PictureBox();
+            lblSelectionHeader_Options = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            lblBreakoutDesc_Models = new Label();
-            lblGrayGhostDesc_Models = new Label();
-            lblFatboyDesc_Models = new Label();
+            btnBack_Options = new Button();
+            btnNext_Options = new Button();
             pnlLogin.SuspendLayout();
             pnlModelsSelection.SuspendLayout();
             pnlFatboyInner_Models.SuspendLayout();
@@ -80,6 +86,8 @@
             pnlGrayGhostOuter_Models.SuspendLayout();
             pnlGrayGhost_Models.SuspendLayout();
             pnlGreyGhostInner_Models.SuspendLayout();
+            pnlSummary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnlLogin
@@ -212,6 +220,17 @@
             pnlFatboyOuter_Models.Size = new Size(300, 320);
             pnlFatboyOuter_Models.TabIndex = 6;
             // 
+            // lblFatboyDesc_Models
+            // 
+            lblFatboyDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblFatboyDesc_Models.ForeColor = Color.White;
+            lblFatboyDesc_Models.Location = new Point(25, 160);
+            lblFatboyDesc_Models.Name = "lblFatboyDesc_Models";
+            lblFatboyDesc_Models.Size = new Size(250, 81);
+            lblFatboyDesc_Models.TabIndex = 5;
+            lblFatboyDesc_Models.Text = "A Softail cruiser known for its classic looks";
+            lblFatboyDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // radChooseFatboy_Model
             // 
             radChooseFatboy_Model.Appearance = Appearance.Button;
@@ -287,6 +306,17 @@
             pnlBreakoutInner_Models.Size = new Size(300, 320);
             pnlBreakoutInner_Models.TabIndex = 6;
             // 
+            // lblBreakoutDesc_Models
+            // 
+            lblBreakoutDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblBreakoutDesc_Models.ForeColor = Color.White;
+            lblBreakoutDesc_Models.Location = new Point(25, 160);
+            lblBreakoutDesc_Models.Name = "lblBreakoutDesc_Models";
+            lblBreakoutDesc_Models.Size = new Size(250, 81);
+            lblBreakoutDesc_Models.TabIndex = 3;
+            lblBreakoutDesc_Models.Text = "A low slung cruiser with an aggressive style";
+            lblBreakoutDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // radChooseBreakout_Model
             // 
             radChooseBreakout_Model.Appearance = Appearance.Button;
@@ -361,6 +391,17 @@
             pnlGreyGhostInner_Models.Name = "pnlGreyGhostInner_Models";
             pnlGreyGhostInner_Models.Size = new Size(300, 320);
             pnlGreyGhostInner_Models.TabIndex = 6;
+            // 
+            // lblGrayGhostDesc_Models
+            // 
+            lblGrayGhostDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblGrayGhostDesc_Models.ForeColor = Color.White;
+            lblGrayGhostDesc_Models.Location = new Point(25, 160);
+            lblGrayGhostDesc_Models.Name = "lblGrayGhostDesc_Models";
+            lblGrayGhostDesc_Models.Size = new Size(250, 81);
+            lblGrayGhostDesc_Models.TabIndex = 4;
+            lblGrayGhostDesc_Models.Text = "An exclusive variant of the classic Fatboy model";
+            lblGrayGhostDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // radChooseGrayGhost_Model
             // 
@@ -484,54 +525,93 @@
             // pnlSummary
             // 
             pnlSummary.BackColor = Color.Black;
+            pnlSummary.Controls.Add(btnBack_Options);
+            pnlSummary.Controls.Add(btnNext_Options);
+            pnlSummary.Controls.Add(lblMainHeader_Options);
+            pnlSummary.Controls.Add(flpMenu_Options);
+            pnlSummary.Controls.Add(pictureBox1);
+            pnlSummary.Controls.Add(lblSelectionHeader_Options);
             pnlSummary.Dock = DockStyle.Fill;
             pnlSummary.Location = new Point(0, 0);
             pnlSummary.Name = "pnlSummary";
             pnlSummary.Size = new Size(1282, 713);
             pnlSummary.TabIndex = 3;
             // 
-            // lblBreakoutDesc_Models
+            // lblMainHeader_Options
             // 
-            lblBreakoutDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblBreakoutDesc_Models.ForeColor = Color.White;
-            lblBreakoutDesc_Models.Location = new Point(25, 160);
-            lblBreakoutDesc_Models.Name = "lblBreakoutDesc_Models";
-            lblBreakoutDesc_Models.Size = new Size(250, 81);
-            lblBreakoutDesc_Models.TabIndex = 3;
-            lblBreakoutDesc_Models.Text = "A low slung cruiser with an aggressive style";
-            lblBreakoutDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
+            lblMainHeader_Options.Font = new Font("Segoe UI", 48F, FontStyle.Bold);
+            lblMainHeader_Options.ForeColor = Color.FromArgb(255, 128, 0);
+            lblMainHeader_Options.Location = new Point(391, 25);
+            lblMainHeader_Options.Name = "lblMainHeader_Options";
+            lblMainHeader_Options.Size = new Size(500, 100);
+            lblMainHeader_Options.TabIndex = 3;
+            lblMainHeader_Options.Text = "Options";
+            lblMainHeader_Options.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblGrayGhostDesc_Models
+            // flpMenu_Options
             // 
-            lblGrayGhostDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblGrayGhostDesc_Models.ForeColor = Color.White;
-            lblGrayGhostDesc_Models.Location = new Point(25, 160);
-            lblGrayGhostDesc_Models.Name = "lblGrayGhostDesc_Models";
-            lblGrayGhostDesc_Models.Size = new Size(250, 81);
-            lblGrayGhostDesc_Models.TabIndex = 4;
-            lblGrayGhostDesc_Models.Text = "An exclusive variant of the classic Fatboy model";
-            lblGrayGhostDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
+            flpMenu_Options.AutoScroll = true;
+            flpMenu_Options.BorderStyle = BorderStyle.FixedSingle;
+            flpMenu_Options.FlowDirection = FlowDirection.TopDown;
+            flpMenu_Options.Location = new Point(838, 219);
+            flpMenu_Options.Name = "flpMenu_Options";
+            flpMenu_Options.Size = new Size(350, 350);
+            flpMenu_Options.TabIndex = 2;
+            flpMenu_Options.Paint += flowLayoutPanel1_Paint;
             // 
-            // lblFatboyDesc_Models
+            // pictureBox1
             // 
-            lblFatboyDesc_Models.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblFatboyDesc_Models.ForeColor = Color.White;
-            lblFatboyDesc_Models.Location = new Point(25, 160);
-            lblFatboyDesc_Models.Name = "lblFatboyDesc_Models";
-            lblFatboyDesc_Models.Size = new Size(250, 81);
-            lblFatboyDesc_Models.TabIndex = 5;
-            lblFatboyDesc_Models.Text = "A Softail cruiser known for its classic looks";
-            lblFatboyDesc_Models.TextAlign = ContentAlignment.MiddleCenter;
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Location = new Point(75, 220);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(400, 250);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // lblSelectionHeader_Options
+            // 
+            lblSelectionHeader_Options.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSelectionHeader_Options.ForeColor = Color.White;
+            lblSelectionHeader_Options.Location = new Point(75, 145);
+            lblSelectionHeader_Options.Name = "lblSelectionHeader_Options";
+            lblSelectionHeader_Options.Size = new Size(400, 54);
+            lblSelectionHeader_Options.TabIndex = 0;
+            lblSelectionHeader_Options.Text = "Model Selected:";
+            lblSelectionHeader_Options.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnBack_Options
+            // 
+            btnBack_Options.BackColor = Color.FromArgb(255, 128, 0);
+            btnBack_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack_Options.ForeColor = Color.Black;
+            btnBack_Options.Location = new Point(75, 630);
+            btnBack_Options.Name = "btnBack_Options";
+            btnBack_Options.Size = new Size(200, 50);
+            btnBack_Options.TabIndex = 8;
+            btnBack_Options.Text = "Back: Models";
+            btnBack_Options.UseVisualStyleBackColor = false;
+            // 
+            // btnNext_Options
+            // 
+            btnNext_Options.BackColor = Color.FromArgb(255, 128, 0);
+            btnNext_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext_Options.ForeColor = Color.Black;
+            btnNext_Options.Location = new Point(988, 630);
+            btnNext_Options.Name = "btnNext_Options";
+            btnNext_Options.Size = new Size(200, 50);
+            btnNext_Options.TabIndex = 7;
+            btnNext_Options.Text = "Next: Summary";
+            btnNext_Options.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 713);
-            Controls.Add(pnlModelsSelection);
             Controls.Add(pnlSummary);
             Controls.Add(pnlOptions);
             Controls.Add(pnlLogin);
+            Controls.Add(pnlModelsSelection);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Z & D Harley Davidson";
@@ -551,6 +631,8 @@
             pnlGrayGhost_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.PerformLayout();
+            pnlSummary.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -598,5 +680,11 @@
         private Label lblBreakoutDesc_Models;
         private Label lblFatboyDesc_Models;
         private Label lblGrayGhostDesc_Models;
+        private FlowLayoutPanel flpMenu_Options;
+        private PictureBox pictureBox1;
+        private Label lblSelectionHeader_Options;
+        private Label lblMainHeader_Options;
+        private Button btnBack_Options;
+        private Button btnNext_Options;
     }
 }

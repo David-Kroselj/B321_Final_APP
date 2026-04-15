@@ -26,5 +26,10 @@ namespace B321_Final_APP
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
