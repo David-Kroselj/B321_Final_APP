@@ -67,14 +67,21 @@
             lblBreakout_Models = new Label();
             lblModelSelect = new Label();
             pnlOptions = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            lblSummary_Summary = new Label();
             pnlSummary = new Panel();
+            lblDreamBike_Options = new Label();
+            btnBack_Options = new Button();
+            btnNext_Options = new Button();
             lblMainHeader_Options = new Label();
             flpMenu_Options = new FlowLayoutPanel();
             pictureBox1 = new PictureBox();
             lblSelectionHeader_Options = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            btnBack_Options = new Button();
-            btnNext_Options = new Button();
+            label3 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             pnlLogin.SuspendLayout();
             pnlModelsSelection.SuspendLayout();
             pnlFatboyInner_Models.SuspendLayout();
@@ -86,6 +93,7 @@
             pnlGrayGhostOuter_Models.SuspendLayout();
             pnlGrayGhost_Models.SuspendLayout();
             pnlGreyGhostInner_Models.SuspendLayout();
+            pnlOptions.SuspendLayout();
             pnlSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -516,15 +524,56 @@
             // 
             // pnlOptions
             // 
+            pnlOptions.BackColor = Color.Black;
+            pnlOptions.Controls.Add(button1);
+            pnlOptions.Controls.Add(button2);
+            pnlOptions.Controls.Add(label3);
+            pnlOptions.Controls.Add(label2);
+            pnlOptions.Controls.Add(label1);
+            pnlOptions.Controls.Add(lblSummary_Summary);
             pnlOptions.Dock = DockStyle.Fill;
             pnlOptions.Location = new Point(0, 0);
             pnlOptions.Name = "pnlOptions";
             pnlOptions.Size = new Size(1282, 713);
             pnlOptions.TabIndex = 2;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(950, 150);
+            label2.Name = "label2";
+            label2.Size = new Size(282, 54);
+            label2.TabIndex = 2;
+            label2.Text = "All My Orders";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(50, 150);
+            label1.Name = "label1";
+            label1.Size = new Size(286, 54);
+            label1.TabIndex = 1;
+            label1.Text = "Current Order";
+            // 
+            // lblSummary_Summary
+            // 
+            lblSummary_Summary.AutoSize = true;
+            lblSummary_Summary.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSummary_Summary.ForeColor = Color.FromArgb(255, 128, 0);
+            lblSummary_Summary.Location = new Point(439, 25);
+            lblSummary_Summary.Name = "lblSummary_Summary";
+            lblSummary_Summary.Size = new Size(405, 106);
+            lblSummary_Summary.TabIndex = 0;
+            lblSummary_Summary.Text = "Summary";
+            // 
             // pnlSummary
             // 
             pnlSummary.BackColor = Color.Black;
+            pnlSummary.Controls.Add(lblDreamBike_Options);
             pnlSummary.Controls.Add(btnBack_Options);
             pnlSummary.Controls.Add(btnNext_Options);
             pnlSummary.Controls.Add(lblMainHeader_Options);
@@ -536,6 +585,41 @@
             pnlSummary.Name = "pnlSummary";
             pnlSummary.Size = new Size(1282, 713);
             pnlSummary.TabIndex = 3;
+            // 
+            // lblDreamBike_Options
+            // 
+            lblDreamBike_Options.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblDreamBike_Options.ForeColor = Color.White;
+            lblDreamBike_Options.Location = new Point(838, 145);
+            lblDreamBike_Options.Name = "lblDreamBike_Options";
+            lblDreamBike_Options.Size = new Size(350, 54);
+            lblDreamBike_Options.TabIndex = 9;
+            lblDreamBike_Options.Text = "Build your dream bike";
+            lblDreamBike_Options.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnBack_Options
+            // 
+            btnBack_Options.BackColor = Color.FromArgb(255, 128, 0);
+            btnBack_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack_Options.ForeColor = Color.Black;
+            btnBack_Options.Location = new Point(75, 630);
+            btnBack_Options.Name = "btnBack_Options";
+            btnBack_Options.Size = new Size(200, 50);
+            btnBack_Options.TabIndex = 8;
+            btnBack_Options.Text = "Back: Models";
+            btnBack_Options.UseVisualStyleBackColor = false;
+            // 
+            // btnNext_Options
+            // 
+            btnNext_Options.BackColor = Color.FromArgb(255, 128, 0);
+            btnNext_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext_Options.ForeColor = Color.Black;
+            btnNext_Options.Location = new Point(988, 630);
+            btnNext_Options.Name = "btnNext_Options";
+            btnNext_Options.Size = new Size(200, 50);
+            btnNext_Options.TabIndex = 7;
+            btnNext_Options.Text = "Next: Summary";
+            btnNext_Options.UseVisualStyleBackColor = false;
             // 
             // lblMainHeader_Options
             // 
@@ -579,39 +663,50 @@
             lblSelectionHeader_Options.Text = "Model Selected:";
             lblSelectionHeader_Options.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnBack_Options
+            // label3
             // 
-            btnBack_Options.BackColor = Color.FromArgb(255, 128, 0);
-            btnBack_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBack_Options.ForeColor = Color.Black;
-            btnBack_Options.Location = new Point(75, 630);
-            btnBack_Options.Name = "btnBack_Options";
-            btnBack_Options.Size = new Size(200, 50);
-            btnBack_Options.TabIndex = 8;
-            btnBack_Options.Text = "Back: Models";
-            btnBack_Options.UseVisualStyleBackColor = false;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(438, 150);
+            label3.Name = "label3";
+            label3.Size = new Size(407, 54);
+            label3.TabIndex = 3;
+            label3.Text = "Place Another Order";
             // 
-            // btnNext_Options
+            // button1
             // 
-            btnNext_Options.BackColor = Color.FromArgb(255, 128, 0);
-            btnNext_Options.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNext_Options.ForeColor = Color.Black;
-            btnNext_Options.Location = new Point(988, 630);
-            btnNext_Options.Name = "btnNext_Options";
-            btnNext_Options.Size = new Size(200, 50);
-            btnNext_Options.TabIndex = 7;
-            btnNext_Options.Text = "Next: Summary";
-            btnNext_Options.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.FromArgb(255, 128, 0);
+            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(98, 620);
+            button1.Name = "button1";
+            button1.Size = new Size(200, 50);
+            button1.TabIndex = 8;
+            button1.Text = "Back: Options";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(255, 128, 0);
+            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(991, 620);
+            button2.Name = "button2";
+            button2.Size = new Size(200, 50);
+            button2.TabIndex = 7;
+            button2.Text = "Finish";
+            button2.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 713);
-            Controls.Add(pnlSummary);
             Controls.Add(pnlOptions);
             Controls.Add(pnlLogin);
             Controls.Add(pnlModelsSelection);
+            Controls.Add(pnlSummary);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Z & D Harley Davidson";
@@ -631,6 +726,8 @@
             pnlGrayGhost_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.ResumeLayout(false);
             pnlGreyGhostInner_Models.PerformLayout();
+            pnlOptions.ResumeLayout(false);
+            pnlOptions.PerformLayout();
             pnlSummary.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -686,5 +783,12 @@
         private Label lblMainHeader_Options;
         private Button btnBack_Options;
         private Button btnNext_Options;
+        private Label lblDreamBike_Options;
+        private Label lblSummary_Summary;
+        private Label label2;
+        private Label label1;
+        private Button button1;
+        private Button button2;
+        private Label label3;
     }
 }
